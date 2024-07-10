@@ -6,11 +6,6 @@ const router = express.Router();
 
 router.post("/register", async (req, res) => {
 
-
-});
-
-router.post("/login", async (req, res) => {
-
     try{
         const userExists = await User.findOne({email: req.body.email})
 
@@ -37,6 +32,35 @@ router.post("/login", async (req, res) => {
             responce.json("Some error occured :"+err)
         }
   
+
+});
+
+router.post("/login", async (req, res) => {
+
+    try{
+        const user = await User.findOne({email: req.body.email})
+        if(!user){
+            res.send({
+                sucess: false,
+                message: "User does not exist, Please register"
+            })
+        }
+        //comparing password
+        const validPassword = await bcrypt.compare(req.body.password, user.password)
+        if(!validPassword){
+            res.send({
+                sucess: false,
+                message: "Invalid password"
+            })
+        }
+        res.send({
+            sucess: true,
+            message: "User has been logged in successfully"
+        });
+    }
+    catch(err){
+        res.send("Some error occured :"+err)
+    }
 });
 
 
