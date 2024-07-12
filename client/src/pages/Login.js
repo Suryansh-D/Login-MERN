@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
 import { Button, Form, Input } from "antd";
-import { Link , useNavigate } from "react-router-dom";
+import React from 'react';
+import { Link } from "react-router-dom";
 
-import {message} from 'antd'
 
 
 function Login() {
   
   const onFinish = async (values)=>{
     console.log(values)
+    
    
   }
 

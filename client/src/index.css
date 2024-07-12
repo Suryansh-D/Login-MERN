@@ -1,9 +1,26 @@
+
+.left-section {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+div p {
+  color: white;
+}
+div p a{
+  color: rgb(37, 229, 12);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ant-form-item-required[title="Email"] {
+  color: white;
+  }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 .App-header {
-  background-color: #f3f8ff;
+  background: linear-gradient(rgb(107, 4, 176) , black );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,18 +52,25 @@
   margin-top: 4px;
   margin-bottom: 8px;
 }
+.form-em .d-block{
+  background-color: #555;
+  color: white;
+  text-decoration-color: white;
+
+}
 .movie-data span{
-  color: #212121;
+  color: #585555;
   font-weight: 600;
 }
 .flex-shrink-0{
   flex-shrink: 0;
 }
 .App-link {
-  color: #61dafb;
+  color: #60e899;
 }  
 .d-block{
   display: block;
+  text-color: white;
 }
 input, select{
   min-height: 45px;
@@ -143,7 +167,7 @@ hr{
   padding-left: 0;
 }
 .blue-clr{
-  color: #1890ff
+  color: #0ea4ea
 }
 .show-ul li{
   padding: 0.75rem 1rem;

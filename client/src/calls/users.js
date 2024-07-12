@@ -12,3 +12,11 @@ export const RegisterUser = async(value) =>{
 }
 
 //Login User
+export const LoginUser = async(value)=>{
+    try{
+        const responce = await axiosInstance.post("api/users/login", value);
+        return response.date;
+    }catch(error){
+        console.log(error)
+    }
+}
