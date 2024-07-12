@@ -20,7 +20,7 @@ div p a{
   pointer-events: none;
 }
 .App-header {
-  background: linear-gradient(rgb(107, 4, 176) , black );
+  background: linear-gradient(rgb(50, 176, 4) , black );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
