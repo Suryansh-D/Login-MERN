@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { Form, Input, Button, Radio, message } from "antd";
-import { Link, useNavigate } from "react-router-dom";
+import { Button, Form, Input, Radio } from "antd";
+import React from "react";
+import { Link } from "react-router-dom";
 
 
 function Register() {
